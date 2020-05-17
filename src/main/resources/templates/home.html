@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Home Page</title>
+</head>
+<body>
+
+
+<h2><span class="badge badge-primary">Welcome to Home Page</span></h2>
+
+<hr>
+
+<div>
+
+    <a th:href="@{/register}" class="btn btn-info btn-sm"> Register new user </a> <hr>
+
+    <a th:href="@{/login}" class="btn btn-info btn-sm"> Login </a> <hr>
+
+    <a th:href="@{/user/dashboard}" class="btn btn-info btn-sm"> User Dashboard </a> <hr>
+
+    <a th:href="@{/admin/dashboard}" class="btn btn-info btn-sm"> Admin Dashboard </a>
+
+</div>
+
+
+
+</body>
+</html>

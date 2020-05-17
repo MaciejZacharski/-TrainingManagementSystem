@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+<h2> Welcome to admin dashboard</h2>
+
+<a th:href="@{/admin/addCourse}" class="btn btn-info btn-sm"> Add new course </a> <hr>
+
+<a th:href="@{/admin/courseList}" class="btn btn-info btn-sm"> Course List </a> <hr>
+
+<a th:href="@{/logout}" class="btn btn-danger btn-sm"
+   onclick="if(!(confirm('Are you sure you want to logout?'))) return false"> Logout </a>
+
+
+</body>
+</html>
